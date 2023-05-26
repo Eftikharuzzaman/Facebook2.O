@@ -54,6 +54,125 @@ header nav .header-logo ul {
   align-items: center;
   gap: 1.2rem;
 }
+header nav .header-logo ul li {
+  position: relative;
+}
+header nav .header-logo ul li .fb-message {
+  width: 320px;
+  height: 90vh;
+  background: #2f2f30;
+  position: absolute;
+  overflow: auto;
+  top: 55px;
+  right: -140px;
+  padding: 15px;
+}
+header nav .header-logo ul li .fb-message .msg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .header-logo ul li .fb-message .msg-header .item h3 {
+  font-size: 25px;
+}
+header nav .header-logo ul li .fb-message .msg-header .item ul li {
+  cursor: pointer;
+}
+header nav .header-logo ul li .fb-message .msg-header .item ul i {
+  font-size: 20px;
+}
+header nav .header-logo ul li .fb-message .msg-search {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background: #4b4b4b;
+}
+header nav .header-logo ul li .fb-message .msg-search i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+header nav .header-logo ul li .fb-message .msg-search input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: var(--text-color);
+  font-size: 16px;
+}
+header nav .header-logo ul li .fb-message .chat-info {
+  display: inline-flex;
+  gap: 1rem;
+  margin: 7px 0;
+}
+header nav .header-logo ul li .fb-message .chat-info .btn {
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+header nav .header-logo ul li .fb-message .chat-info .chat-btn-inbox {
+  background: #2f2f30;
+  color: var(--text-color);
+  transition: 0.3s all ease;
+}
+header nav .header-logo ul li .fb-message .chat-info .chat-btn-inbox:hover {
+  background: var(--other-color);
+  color: var(--hover-color);
+}
+header nav .header-logo ul li .fb-message .chat-info .chat-btn-comn {
+  background: transparent;
+  color: var(--text-color);
+  transition: 0.3s all ease;
+}
+header nav .header-logo ul li .fb-message .chat-info .chat-btn-comn:hover {
+  background: var(--other-color);
+  color: var(--hover-color);
+}
+header nav .header-logo ul li .fb-message .chat {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  gap: 0.9rem;
+  cursor: pointer;
+  padding: 10px 8px;
+  border-radius: 10px;
+}
+header nav .header-logo ul li .fb-message .chat .user-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header nav .header-logo ul li .fb-message .chat .user-info h4 {
+  font-size: 15px;
+}
+header nav .header-logo ul li .fb-message .chat .user-info p {
+  font-size: 10px;
+  color: #f7f1e3;
+}
+header nav .header-logo ul li .fb-message .chat .more {
+  position: absolute;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+}
+header nav .header-logo ul li .fb-message .chat .more i {
+  font-size: 25px;
+}
+header nav .header-logo ul li .fb-message .chat:hover {
+  background: #57606f;
+}
+header nav .header-logo ul li .fb-message .chat:hover .more {
+  opacity: 1;
+  visibility: visible;
+}
 header nav .header-logo ul li .icons {
   background: #4b4b4b;
   padding: 10px;
@@ -74,7 +193,17 @@ header nav .header-logo ul li .admin-logo img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  outline: 2px solid #485460;
+  outline: 2px solid #ffffff;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header nav .header-logo ul li .admin-logo i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  border-radius: 50%;
+  background: red;
 }
 
 :root {
