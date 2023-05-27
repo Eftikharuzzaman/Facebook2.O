@@ -66,6 +66,12 @@ header nav .header-logo ul li .fb-message {
   top: 55px;
   right: -140px;
   padding: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+header nav .header-logo ul li .fb-message.activemsg {
+  opacity: 1;
+  visibility: visible;
 }
 header nav .header-logo ul li .fb-message .msg-header {
   display: flex;
@@ -204,6 +210,127 @@ header nav .header-logo ul li .admin-logo i {
   z-index: 9999;
   border-radius: 50%;
   background: red;
+}
+header nav .header-logo ul li .notification-main {
+  width: 370px;
+  height: 90vh;
+  background: #2f2f30;
+  position: absolute;
+  overflow: auto;
+  top: 55px;
+  right: -90px;
+  padding: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all ease;
+}
+header nav .header-logo ul li .notification-main.shownoti {
+  opacity: 1;
+  visibility: visible;
+}
+header nav .header-logo ul li .notification-main .notification-header, header nav .header-logo ul li .notification-main .notification-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .header-logo ul li .notification-main .notification-header .hd-item i, header nav .header-logo ul li .notification-main .notification-note .hd-item i {
+  font-size: 23px;
+}
+header nav .header-logo ul li .notification-main .hd-info {
+  display: inline-flex;
+  gap: 1rem;
+  margin: 7px 0;
+}
+header nav .header-logo ul li .notification-main .hd-info .btn {
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+header nav .header-logo ul li .notification-main .hd-info .hd-btn-all {
+  background: #2f2f30;
+  color: var(--text-color);
+  transition: 0.3s all ease;
+}
+header nav .header-logo ul li .notification-main .hd-info .hd-btn-all:hover {
+  background: var(--other-color);
+  color: var(--hover-color);
+}
+header nav .header-logo ul li .notification-main .hd-info .hd-btn-unread {
+  background: transparent;
+  color: var(--text-color);
+  transition: 0.3s all ease;
+}
+header nav .header-logo ul li .notification-main .hd-info .hd-btn-unread:hover {
+  background: var(--other-color);
+  color: var(--hover-color);
+}
+header nav .header-logo ul li .notification-main .notification-note .hd-item a {
+  color: #1e90ff;
+}
+header nav .header-logo ul li .notification-main .notification-notice {
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb {
+  position: relative;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: 1.5px solid red;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb i {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 6px;
+  background: #2ed573;
+  border-radius: 50%;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item p {
+  font-size: 14px;
+  align-items: center;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item span {
+  font-weight: 600;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item small {
+  font-size: 12px;
+  color: #1e90ff;
+}
+header nav .header-logo ul li .notification-main .notification-notice .more {
+  width: 30px;
+  height: 30px;
+  background: #1e272e;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 35%;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  visibility: hidden;
+}
+header nav .header-logo ul li .notification-main .notification-notice:hover .more {
+  opacity: 1;
+  visibility: visible;
+}
+header nav .header-logo ul li .notification-main .notification-notice:hover {
+  background: #485460;
 }
 
 :root {
