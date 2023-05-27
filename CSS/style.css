@@ -299,6 +299,29 @@ header nav .header-logo ul li .notification-main .notification-notice .item .img
   background: #2ed573;
   border-radius: 50%;
 }
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb .hert {
+  background: #EA2027;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb .noti {
+  background: #576574;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb .live {
+  background: #EA2027;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb .movie {
+  background: #2d98da;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb .group {
+  background: #2d98da;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb .sad {
+  background: none;
+  color: #fed330;
+  font-size: 25px;
+}
+header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb .copy {
+  background: #2d98da;
+}
 header nav .header-logo ul li .notification-main .notification-notice .item p {
   font-size: 14px;
   align-items: center;
