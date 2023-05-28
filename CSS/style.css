@@ -289,7 +289,7 @@ header nav .header-logo ul li .notification-main .notification-notice .item .img
   border-radius: 50px;
   -o-object-fit: cover;
      object-fit: cover;
-  outline: 1.5px solid red;
+  outline: 1.5px solid #EA2027;
 }
 header nav .header-logo ul li .notification-main .notification-notice .item .img-thumb i {
   position: absolute;
@@ -354,6 +354,111 @@ header nav .header-logo ul li .notification-main .notification-notice:hover .mor
 }
 header nav .header-logo ul li .notification-main .notification-notice:hover {
   background: #485460;
+}
+header nav .header-logo ul li .admin-deshboard {
+  width: 380px;
+  height: 68vh;
+  position: absolute;
+  background: #2f2f30;
+  top: 65px;
+  right: -30px;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+header nav .header-logo ul li .admin-deshboard.showAdmin {
+  opacity: 1;
+  visibility: visible;
+}
+header nav .header-logo ul li .admin-deshboard .profile-dash {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+header nav .header-logo ul li .admin-deshboard .profile-dash:hover {
+  background: #3a3b3c;
+}
+header nav .header-logo ul li .admin-deshboard .profile-dash .admin-info {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+header nav .header-logo ul li .admin-deshboard .profile-dash .admin-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: 2px solid #2f3640;
+}
+header nav .header-logo ul li .admin-deshboard .profile-dash .admin-info h3 {
+  font-size: 20px;
+}
+header nav .header-logo ul li .admin-deshboard .profile-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+header nav .header-logo ul li .admin-deshboard .profile-more:hover {
+  background: #3a3b3c;
+}
+header nav .header-logo ul li .admin-deshboard .profile-more a {
+  color: var(--other-color);
+}
+header nav .header-logo ul li .admin-deshboard .profile-more .profile-count span {
+  background: #ff3f34;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+header nav .header-logo ul li .admin-deshboard .fb-setting ul {
+  display: block;
+}
+header nav .header-logo ul li .admin-deshboard .fb-setting ul li {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+header nav .header-logo ul li .admin-deshboard .fb-setting ul li:hover {
+  background: #3a3b3c;
+}
+header nav .header-logo ul li .admin-deshboard .fb-setting ul li .setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .header-logo ul li .admin-deshboard .fb-setting ul li .setting .setting-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+header nav .header-logo ul li .admin-deshboard .fb-setting ul li .setting .setting-flex i {
+  font-size: 25px;
+  padding: 6px;
+  background: #4e4f50;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .header-logo ul li .admin-deshboard .fb-setting ul li .setting .setting-flex h4 {
+  font-size: 15px;
+}
+header nav .header-logo ul li .admin-deshboard .fb-setting ul li .setting .setting-icon i {
+  font-size: 25px;
 }
 
 :root {

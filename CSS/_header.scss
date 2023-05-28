@@ -315,7 +315,7 @@ header{
                                         height: 56px;
                                         border-radius: 50px;
                                         object-fit: cover;
-                                        outline: 1.5px solid red;
+                                        outline: 1.5px solid #EA2027;
                                     }
                                     i{
                                         position: absolute;
@@ -387,6 +387,136 @@ header{
                             }
                         }
                     }
+                    // Admin-Dashbord Desigen Start
+                    .admin-deshboard{
+                        &.showAdmin{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        width: 380px;
+                        height: 68vh;
+                        position: absolute;
+                        background: #2f2f30;
+                        top: 65px;
+                        right: -30px;
+                        padding: 15px;
+                        border-radius: 10px;
+                        opacity: 0;
+                        visibility: hidden;
+
+                        // .admin-half{
+                        //     width: 380px;
+                        //     height: 22vh;
+                        //     background: #485460;
+                        //     border-radius: 15px;
+
+                            .profile-dash{
+                                &:hover{
+                                    background: #3a3b3c;
+                                }
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin: 15px 0;
+                                padding: 10px;
+                                border-radius: 10px;
+
+                                .admin-info{
+                                    display: flex;
+                                    gap: 0.7rem;
+                                    align-items: center;
+
+                                    img{
+                                        width: 40px;
+                                        height: 40px;
+                                        border-radius: 50%;
+                                        object-fit: cover;
+                                        outline: 2px solid #2f3640;
+                                    }
+                                    h3{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                            .profile-more{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin: 10px;
+                                // margin-bottom: 5px;
+                                padding: 12px;
+                                border-radius: 10px;
+                                cursor: pointer;
+
+                                &:hover{
+                                    background:  #3a3b3c;
+                                }
+
+                                a{
+                                    color: var(--other-color);
+                                }
+                                .profile-count{
+                                    span{
+                                        background: #ff3f34;
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 50%;
+                                        display: inline-flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                            .fb-setting{
+                                ul{
+                                    display: block;
+
+                                    li{
+                                        width: 100%;
+                                        padding: 10px;
+                                        cursor: pointer;
+                                        border-radius: 10px;
+
+                                        &:hover{
+                                            background: #3a3b3c;
+                                        }
+
+                                        .setting{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            .setting-flex{
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 0.6rem;
+
+                                                i{
+                                                    font-size: 25px;
+                                                    padding: 6px;
+                                                    background: #4e4f50;
+                                                    border-radius: 50%;
+                                                    display: inline-flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                }
+                                                h4{
+                                                    font-size: 15px;
+                                                }
+                                            }
+                                            .setting-icon{
+                                                i{
+                                                    font-size: 25px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        // }
+                    }
+                    // Admin-Dashbord Desigen End
                 }
             }
         }

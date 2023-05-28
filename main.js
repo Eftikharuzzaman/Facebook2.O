@@ -12,3 +12,11 @@ notification.addEventListener('click', function(){
     notificationArea.classList.toggle('shownoti')
 })
 // console.log(notification)
+
+// Admin Desigen
+let admin = document.querySelector('.admin-logo');
+let showadmin = document.querySelector('.admin-deshboard');
+admin.addEventListener('click', function(){
+    showadmin.classList.toggle('showAdmin')
+})
+// console.log(admin)
